@@ -1,0 +1,16 @@
+#:kivy 1.0
+
+<Controller>:
+    label_wid: show_label_id
+
+    BoxLayout:
+        orientation: 'vertical'
+        padding: 20
+
+        Button:
+            text: root.btn_info
+            on_press: root.do_action()
+
+        Label:
+            id: show_label_id
+            text: 'My label before button press'
